@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nightshift Lobo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#1B1D23;
+  --bg-soft:#22252C;
+  --surface:#2A2E37;
+  --border:#303540;
+  --text:#D7DAE3;
+  --muted:#8B93A7;
+
+  --c0:#22252C;  --c1:#D67A7A;  --c2:#6CBF84;  --c3:#CFAE6A;
+  --c4:#6C82D9;  --c5:#C25680;  --c6:#56B6C2;  --c7:#D7DAE3;
+  --c8:#303540;  --c9:#E08A8A;  --c10:#81D99A; --c11:#E0C27A;
+  --c12:#7C93F2; --c13:#D05A8E; --c14:#6ED0D6; --c15:#F0F2F6;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Inter',sans-serif;
+  background:radial-gradient(circle at 15% -10%, #2A2E37 0%, var(--bg) 50%);
+  color:var(--text);
+  line-height:1.6;
+}
+.container{max-width:1300px;margin:auto;padding:2rem}
+
+nav{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1rem 0;border-bottom:1px solid var(--border)
+}
+.logo{
+  font-weight:900;font-size:1.4rem;
+  background:linear-gradient(90deg,var(--c4),var(--c6));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent
+}
+nav a{color:var(--muted);text-decoration:none;margin-left:2rem;font-size:.9rem}
+nav a:hover{color:var(--c4)}
+
+.hero{
+  text-align:center;padding:6rem 1rem 4rem 1rem
+}
+.hero h1{
+  font-size:3.8rem;font-weight:900;margin-bottom:1rem;
+  background:linear-gradient(90deg,var(--c4),var(--c6),var(--c12));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent
+}
+.hero p{max-width:750px;margin:auto;color:var(--muted);font-size:1.15rem}
+
+section{padding:5rem 0}
+.section-title{font-size:2rem;font-weight:800;margin-bottom:3rem}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:22px;padding:2rem;
+  transition:.3s
+}
+.card:hover{transform:translateY(-8px);border-color:var(--c4)}
+.card h3{margin-bottom:.6rem}
+.card p{color:var(--muted);font-size:.95rem}
+.icon{margin-bottom:1rem}
+
+.palette-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:1.2rem
+}
+.swatch{
+  border-radius:18px;overflow:hidden;
+  border:1px solid var(--border);
+  background:var(--surface);
+  transition:.3s
+}
+.swatch:hover{transform:scale(1.05)}
+.swatch-color{height:90px}
+.swatch-info{padding:.8rem;text-align:center;font-size:.8rem}
+.swatch-info span{display:block;color:var(--muted)}
+
+.footer{
+  border-top:1px solid var(--border);
+  padding:3rem 0;text-align:center;
+  color:var(--muted);font-size:.85rem
+}
+
+.badge{
+  display:inline-block;padding:.4rem .8rem;
+  background:var(--bg-soft);
+  border:1px solid var(--border);
+  border-radius:999px;font-size:.7rem;
+  margin-top:.6rem;color:var(--c12)
+}
+
+.btn-primary:hover {
+  background: #7C93F2;
+  box-shadow: 0 0 25px rgba(124,147,242,0.5);
+}
+
+@media(max-width:768px){
+  .hero h1{font-size:2.5rem}
+  nav a{display:none}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<nav>
+<div class="logo">Nightshift Lobo</div>
+<div>
+<a href="#ecosystem">Ecosystem</a>
+<a href="#palette">Palette</a>
+<a href="#roadmap">Roadmap</a>
+</div>
+</nav>
+
+<div class="hero">
+<h1>Precision Dark. Engineered Focus.</h1>
+<p>
+Nightshift Lobo is a refined dark ecosystem theme engineered for clarity, depth, and deep work.
+Designed with intentional contrast, balanced saturation, and professional elegance.
+</p>
+</div>
+
+<section id="ecosystem">
+<div class="section-title">Theme Ecosystem</div>
+<div class="grid">
+
+<div class="card">
+<div class="icon">🖥️</div>
+<h3>DankMaterialShell</h3>
+<p>Full desktop shell integration with consistent surfaces, borders and accent layering.</p>
+<span class="badge">Available</span>
+</div>
+
+<div class="card">
+<div class="icon"></div>
+<h3>Neovim</h3>
+<p>Semantic token tuning, low eye fatigue contrast ratios and refined syntax harmony.</p>
+<span class="badge">Available</span>
+</div>
+
+<div class="card">
+<div class="icon"></div>
+<h3>Kitty Terminal</h3>
+<p>Balanced 16‑color ANSI palette with elegant brights and deep neutral backgrounds.</p>
+<span class="badge">Available</span>
+</div>
+
+<div class="card">
+<div class="icon">📝</div>
+<h3>VSCode</h3>
+<p>UI token mapping and semantic highlighting in progress.</p>
+<span class="badge">In Development</span>
+</div>
+
+<div class="card">
+<div class="icon">🌐</div>
+<h3>Browser Theming</h3>
+<p>Minimal UI chrome styling to extend Nightshift Lobo into the web layer.</p>
+<span class="badge">In Development</span>
+</div>
+
+</div>
+</section>
+
+<section id="palette">
+<div class="section-title">Complete 16‑Colours Colour Palette</div>
+<div class="palette-grid">
+
+<div class="swatch"><div class="swatch-color" style="background:var(--c0)"></div><div class="swatch-info">color0<span>#22252C</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--c1)"></div><div class="swatch-info">color1<span>#D67A7A</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--c2)"></div><div class="swatch-info">color2<span>#6CBF84</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--c3)"></div><div class="swatch-info">color3<span>#CFAE6A</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--c4)"></div><div class="swatch-info">color4<span>#6C82D9</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--c5)"></div><div class="swatch-info">color5<span>#C25680</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--c6)"></div><div class="swatch-info">color6<span>#56B6C2</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--c7)"></div><div class="swatch-info">color7<span>#D7DAE3</span></div></div>
+
+<div class="swatch"><div class="swatch-color" style="background:var(--c8)"></div><div class="swatch-info">color8<span>#303540</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--c9)"></div><div class="swatch-info">color9<span>#E08A8A</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--c10)"></div><div class="swatch-info">color10<span>#81D99A</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--c11)"></div><div class="swatch-info">color11<span>#E0C27A</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--c12)"></div><div class="swatch-info">color12<span>#7C93F2</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--c13)"></div><div class="swatch-info">color13<span>#D05A8E</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--c14)"></div><div class="swatch-info">color14<span>#6ED0D6</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--c15)"></div><div class="swatch-info">color15<span>#F0F2F6</span></div></div>
+
+</div>
+</section>
+
+<section id="roadmap">
+<div class="section-title">Ecosystem Vision</div>
+<div class="grid">
+<div class="card">
+<h3>Full Linux Stack</h3>
+<p>Terminal, Editor, Shell, Browser and System UI unified under a single design language.</p>
+</div>
+<div class="card">
+<h3>Design Consistency</h3>
+<p>Carefully tuned contrast ratios, semantic color meaning, and hierarchy discipline.</p>
+</div>
+<div class="card">
+<h3>Professional Aesthetic</h3>
+<p>Built for developers, engineers and power users who demand visual precision.</p>
+</div>
+</div>
+</section>
+
+<section id="github">
+  <div class="section-title">Open Source</div>
+
+  <div class="card" style="text-align:center; padding:3rem;">
+    
+    <div style="font-size:3rem; margin-bottom:1rem;">
+      <!-- GitHub SVG Icon -->
+      <svg height="48" viewBox="0 0 16 16" width="48" fill="currentColor">
+        <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 
+        0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+        -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 
+        2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 
+        0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 
+        .67-.21 2.2.82a7.56 7.56 0 012.01-.27c.68 0 1.36.09 
+        2.01.27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 
+        1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 
+        3.75-3.65 3.95.29.25.54.73.54 1.48 
+        0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 
+        8.01 0 0016 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+    </div>
+
+    <h3 style="margin-bottom:1rem;">Nightshift Lobo on GitHub</h3>
+    <p style="color:var(--muted); max-width:600px; margin:auto;">
+      Explore the source code, installation guides, and contribute to the Nightshift Lobo ecosystem.
+    </p>
+
+    <div style="margin-top:2rem;">
+      <a href="https://github.com/AJ-Udayanga/nightshift-lobo"
+         target="_blank"
+         class="btn btn-primary">
+         View Repository
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<div class="footer">
+Nightshift Lobo — A Modern & Engineered Theme Ecosystem
+</div>
+
+</div>
+</body>
+</html>
