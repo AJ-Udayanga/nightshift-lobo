@@ -1,0 +1,34 @@
+{
+  "name": "NightShift Lobo",
+  "version": "1.0.0",
+
+  "core": {
+    "background": "#1B1D23",
+    "foreground": "#D7DAE3",
+    "selection": "#2A2E37",
+    "active_border": "#303540",
+    "inactive_border": "#252932"
+  },
+
+  "normal": {
+    "black": "#22252C",
+    "red": "#D67A7A",
+    "green": "#6CBF84",
+    "yellow": "#CFAE6A",
+    "blue": "#6C82D9",
+    "purple": "#C25680",
+    "cyan": "#56B6C2",
+    "white": "#D7DAE3"
+  },
+
+  "bright": {
+    "black": "#303540",
+    "red": "#E08A8A",
+    "green": "#81D99A",
+    "yellow": "#E0C27A",
+    "blue": "#7C93F2",
+    "purple": "#D05A8E",
+    "cyan": "#6ED0D6",
+    "white": "#F0F2F6"
+  }
+}

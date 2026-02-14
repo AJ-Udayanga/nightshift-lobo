@@ -1,0 +1,164 @@
+{
+  "name": "NightShift Lobo",
+  "type": "dark",
+  "semanticHighlighting": true,
+
+  "colors": {
+    /* Core */
+    "editor.background": "#1B1D23",
+    "editor.foreground": "#D7DAE3",
+    "editor.selectionBackground": "#2A2E37",
+    "editor.lineHighlightBackground": "#22252C",
+
+    /* Title Bar */
+    "titleBar.activeBackground": "#1B1D23",
+    "titleBar.activeForeground": "#D7DAE3",
+    "titleBar.inactiveBackground": "#252932",
+    "titleBar.inactiveForeground": "#A0A8B5",
+
+    /* Activity Bar */
+    "activityBar.background": "#1B1D23",
+    "activityBar.foreground": "#D7DAE3",
+    "activityBar.inactiveForeground": "#5C6370",
+    "activityBar.border": "#303540",
+
+    /* Sidebar */
+    "sideBar.background": "#1B1D23",
+    "sideBar.foreground": "#D7DAE3",
+    "sideBar.border": "#303540",
+    "sideBarTitle.foreground": "#CFAE6A",
+
+    /* Explorer */
+    "list.activeSelectionBackground": "#2A2E37",
+    "list.activeSelectionForeground": "#D7DAE3",
+    "list.hoverBackground": "#22252C",
+
+    /* Tabs */
+    "tab.activeBackground": "#1B1D23",
+    "tab.activeForeground": "#D7DAE3",
+    "tab.inactiveBackground": "#252932",
+    "tab.inactiveForeground": "#5C6370",
+    "tab.border": "#303540",
+
+    /* Status Bar */
+    "statusBar.background": "#252932",
+    "statusBar.foreground": "#D7DAE3",
+    "statusBar.debuggingBackground": "#6C82D9",
+
+    /* Panel */
+    "panel.background": "#1B1D23",
+    "panel.border": "#303540",
+
+    /* Borders */
+    "editorGroup.border": "#303540",
+    "editorWidget.border": "#303540",
+
+    /* Terminal */
+    "terminal.background": "#1B1D23",
+    "terminal.foreground": "#D7DAE3",
+    "terminalCursor.foreground": "#6C82D9",
+
+    /* Git */
+    "gitDecoration.addedResourceForeground": "#6CBF84",
+    "gitDecoration.modifiedResourceForeground": "#CFAE6A",
+    "gitDecoration.deletedResourceForeground": "#D67A7A",
+
+    /* Diff */
+    "diffEditor.insertedTextBackground": "#1E2B24",
+    "diffEditor.removedTextBackground": "#2B1E22",
+
+    /* Diagnostics */
+    "editorError.foreground": "#D67A7A",
+    "editorWarning.foreground": "#CFAE6A",
+    "editorInfo.foreground": "#6C82D9",
+    "editorHint.foreground": "#56B6C2",
+
+    /* MENU BAR */
+    "menubar.selectionBackground": "#2A2E37",
+    "menubar.selectionForeground": "#D7DAE3",
+    "menubar.border": "#303540",
+
+    /* DROPDOWN MENUS */
+    "menu.background": "#1B1D23",
+    "menu.foreground": "#D7DAE3",
+    "menu.selectionBackground": "#2A2E37",
+    "menu.selectionForeground": "#D7DAE3",
+    "menu.border": "#303540",
+    "menu.separatorBackground": "#303540",
+
+    /* DROPDOWN / CONTEXT */
+    "dropdown.background": "#1B1D23",
+    "dropdown.foreground": "#D7DAE3",
+    "dropdown.border": "#303540",
+
+    /* INPUTS */
+    "input.background": "#22252C",
+    "input.foreground": "#D7DAE3",
+    "input.border": "#303540",
+
+    /* SCROLLBAR */
+    "scrollbar.shadow": "#000000",
+    "scrollbarSlider.background": "#303540",
+    "scrollbarSlider.hoverBackground": "#6C82D9",
+    "scrollbarSlider.activeBackground": "#7C93F2",
+
+    /* QUICK PICK */
+    "pickerGroup.border": "#303540",
+    "pickerGroup.foreground": "#CFAE6A"
+  },
+
+  "tokenColors": [
+    {
+      "scope": "comment",
+      "settings": {
+        "foreground": "#5C6370",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["keyword", "storage"],
+      "settings": {
+        "foreground": "#6C82D9"
+      }
+    },
+    {
+      "scope": "string",
+      "settings": {
+        "foreground": "#6CBF84"
+      }
+    },
+    {
+      "scope": ["entity.name.function", "support.function"],
+      "settings": {
+        "foreground": "#56B6C2"
+      }
+    },
+    {
+      "scope": ["variable", "identifier"],
+      "settings": {
+        "foreground": "#D7DAE3"
+      }
+    },
+    {
+      "scope": ["entity.name.type", "support.type"],
+      "settings": {
+        "foreground": "#CFAE6A"
+      }
+    },
+    {
+      "scope": "invalid",
+      "settings": {
+        "foreground": "#D67A7A"
+      }
+    }
+  ],
+
+  "semanticTokenColors": {
+    "function": "#56B6C2",
+    "method": "#56B6C2",
+    "variable": "#D7DAE3",
+    "parameter": "#D7DAE3",
+    "type": "#CFAE6A",
+    "class": "#CFAE6A"
+  }
+}
